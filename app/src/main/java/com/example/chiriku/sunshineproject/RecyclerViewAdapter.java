@@ -16,6 +16,7 @@ import java.util.List;
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.RecylcerViewHolder> {
     List<WeatherModel> weatherModelList;
 
+
     public RecyclerViewAdapter(List<WeatherModel> weatherModelList) {
         this.weatherModelList = weatherModelList;
     }
@@ -41,7 +42,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public int getItemCount() {
-        return 0;
+        return weatherModelList.size();
     }
 
 
